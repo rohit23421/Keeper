@@ -1,0 +1,13 @@
+<div class="buttons-wrapper">
+    <a href="/" class="logo">Keeper</a>
+    <div class="buttons">
+        <a href="/new" class="btn">NEW</a>
+        <% if(locals.canSave) { %>
+            <button class="btn" type="submit">SAVE</button>
+        <% } %>
+        <% if(locals.id != null) { %>
+            <a href="/<%= locals.id %>/duplicate" 
+            class="btn">DUPLICATE</a>
+        <% } %>
+    </div>
+</div>
